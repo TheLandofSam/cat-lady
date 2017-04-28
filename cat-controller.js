@@ -11,8 +11,8 @@ function CatController(){
   ` 
   <div>
     <img id="catPic${cat.id}" src="${cat.imgUrl}">
-      <button type="buttton" id="catButton${cat.id}" onclick="petCat(${cat.id})">Touch kitty's pretty soft fur!</button>
-      <button type="buttton" onclick="kittyBack(${cat.id})">Kitty! Come back!!</button>
+      <button type="buttton" id="catButton${cat.id}" onclick="app.controller.petCat(${cat.id})">Touch kitty's pretty soft fur!</button>
+      <button type="buttton" onclick="app.controllers.catController.kittyBack(${cat.id})">Kitty! Come back!!</button>
       <h1 id="petCount${cat.id}">${cat.petCount}</h1>
       <h2 id="catStatus${cat.id}">${cat.happyStatus}</h2>
       <h2>${cat.name}</h2>
